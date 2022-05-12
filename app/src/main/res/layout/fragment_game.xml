@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    tools:context=".presentation.game.GameFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/game_score_margin_bottom"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/frame_layout_game"
+        app:layout_constraintStart_toStartOf="@id/frame_layout_game">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/nunito_black"
+            android:text="@string/score"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_menu_highscore_text_size" />
+
+        <TextView
+            android:id="@+id/text_view_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/nunito_black"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_menu_highscore_text_size"
+            tools:text="45" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/game_score_margin_bottom"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/frame_layout_game"
+        app:layout_constraintEnd_toEndOf="@id/frame_layout_game">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/nunito_black"
+            android:text="@string/highscore"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_menu_highscore_text_size" />
+
+        <TextView
+            android:id="@+id/text_view_highscore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/nunito_black"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_menu_highscore_text_size"
+            tools:text="45" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_layout_game"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/game_field_height"
+        android:layout_marginHorizontal="@dimen/game_field_margin_horizontal"
+        android:layout_marginBottom="@dimen/game_field_margin_bottom"
+        android:background="@drawable/game_field_shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+    <include
+        layout="@layout/button_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/frame_layout_game" />
+
+    <TextView
+        android:id="@+id/text_view_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_black"
+        android:textColor="@color/white"
+        android:textSize="@dimen/main_menu_title_text_size"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/frame_layout_game"
+        tools:text="29.43" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

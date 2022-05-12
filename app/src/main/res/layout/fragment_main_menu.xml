@@ -21,13 +21,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageButton
+    <include
         android:id="@+id/image_button_play"
+        layout="@layout/button_play"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/big_play_button_ripple_effect"
-        android:contentDescription="@string/play"
-        android:src="@drawable/ic_play_big"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,7 +41,6 @@
         app:layout_constraintTop_toBottomOf="@id/image_button_play">
 
         <TextView
-            android:id="@+id/text_view_highscore_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"

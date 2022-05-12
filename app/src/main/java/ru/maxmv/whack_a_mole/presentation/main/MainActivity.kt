@@ -1,7 +1,9 @@
 package ru.maxmv.whack_a_mole.presentation.main
 
 import androidx.appcompat.app.AppCompatActivity
+
 import android.os.Bundle
+
 import ru.maxmv.whack_a_mole.R
 
 class MainActivity : AppCompatActivity() {

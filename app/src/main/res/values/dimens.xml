@@ -4,4 +4,11 @@
     <dimen name="main_menu_text_views_margin">50dp</dimen>
     <dimen name="main_menu_title_text_size">43sp</dimen>
     <dimen name="main_menu_highscore_text_size">25sp</dimen>
+    <dimen name="game_score_margin_bottom">10dp</dimen>
+
+    <!--                 Game                           -->
+    <dimen name="game_field_height">400dp</dimen>
+    <dimen name="game_field_margin_bottom">100dp</dimen>
+    <dimen name="game_field_margin_horizontal">20dp</dimen>
+    <dimen name="hole_size">75dp</dimen>
 </resources>
