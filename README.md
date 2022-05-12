@@ -1,7 +1,5 @@
 # Whack-a-mole
 
-# Whack-a-mole
-
 MinSDK: 21 (Android 5.0 Lollipop).
 
 Technologies used: MVVM, View Binding, Single Activity App, Kotlin Coroutines.
