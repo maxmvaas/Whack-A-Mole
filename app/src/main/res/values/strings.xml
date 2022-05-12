@@ -1,6 +1,11 @@
 <resources>
-    <string name="app_name">Whack-a-mole</string>
+    <string name="app_name">Whack-A-Mole</string>
     <string name="play">Play</string>
-    <string name="highscore">Highscore:&#160;</string>
-    <string name="score">Score:&#160;</string>
+    <string name="highscore">Highscore: %1$d</string>
+    <string name="score">Score: %1$d</string>
+    <string name="main_menu">Main menu</string>
+    <string name="replay">Replay</string>
+    <string name="game_over">Game over!</string>
+    <string name="time_left">Time left: %1$d</string>
+    <string name="result">Your score: %1$d</string>
 </resources>

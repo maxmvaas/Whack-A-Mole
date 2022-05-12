@@ -9,8 +9,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:background="@drawable/mole_shape"
+        android:background="@drawable/hole_shape"
         android:contentDescription="@string/play"
+        android:src="@drawable/ic_mole"
         android:visibility="gone" />
 
 </FrameLayout>

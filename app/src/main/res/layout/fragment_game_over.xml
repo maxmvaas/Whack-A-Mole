@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    tools:context=".presentation.game_over.GameOverFragment">
+
+    <LinearLayout
+        android:id="@+id/layout_game_over"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_black"
+            android:text="@string/game_over"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_menu_title_text_size" />
+
+        <TextView
+            android:id="@+id/text_view_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/game_over_score_margin_top"
+            android:fontFamily="@font/nunito_black"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_menu_highscore_text_size"
+            tools:text="Your score: 458" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/game_over_buttons_margin_top"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@id/layout_game_over"
+        app:layout_constraintStart_toStartOf="@id/layout_game_over"
+        app:layout_constraintTop_toBottomOf="@id/layout_game_over">
+
+        <ImageButton
+            android:id="@+id/image_button_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/button_ripple_effect"
+            android:contentDescription="@string/main_menu"
+            android:padding="@dimen/game_over_buttons_padding"
+            android:src="@drawable/ic_home" />
+
+        <ImageButton
+            android:id="@+id/image_button_replay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/game_over_retry_button_margin_start"
+            android:background="@drawable/button_ripple_effect"
+            android:contentDescription="@string/replay"
+            android:padding="@dimen/game_over_buttons_padding"
+            android:src="@drawable/ic_replay" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
