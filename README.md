@@ -13,6 +13,6 @@ Libs used: Navigation, Android Architecture Components.
 ![Альтернативный текст](screenshots/game_prestart.jpg)
 ![Альтернативный текст](screenshots/game_in_progress.jpg)
 ![Альтернативный текст](screenshots/game_over.jpg)
-  ![Альтернативный текст](screenshots/gameplay.mp4)
+![Альтернативный текст](screenshots/gameplay.mp4)
   
 </details>
