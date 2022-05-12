@@ -18,4 +18,4 @@ Libs used: Navigation, Android Architecture Components.
 
 ##Gameplay video:
 
-![Альтернативный текст][(https://img.youtube.com/vi/hSRG5R14Plk/0.jpg)](https://www.youtube.com/watch?v=hSRG5R14Plk)
+![Альтернативный текст](https://www.youtube.com/watch?v=hSRG5R14Plk)
