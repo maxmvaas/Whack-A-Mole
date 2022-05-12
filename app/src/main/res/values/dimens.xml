@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--                 Main menu                     -->
+    <dimen name="main_menu_text_views_margin">50dp</dimen>
+    <dimen name="main_menu_title_text_size">43sp</dimen>
+    <dimen name="main_menu_highscore_text_size">25sp</dimen>
+</resources>

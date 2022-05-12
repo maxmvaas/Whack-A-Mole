@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">whack_a_mole</string>
+    <string name="app_name">Whack-a-mole</string>
+    <string name="play">Play</string>
+    <string name="highscore">Highscore:&#160;</string>
 </resources>
