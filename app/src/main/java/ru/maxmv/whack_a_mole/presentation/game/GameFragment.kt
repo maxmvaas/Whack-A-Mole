@@ -3,6 +3,7 @@ package ru.maxmv.whack_a_mole.presentation.game
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.os.Handler
+import android.os.Looper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -77,7 +78,7 @@ class GameFragment : Fragment() {
                         }
                         position = adapter.showMole()
                     } finally {
-                        Handler().postDelayed(this, interval)
+                        Handler(Looper.getMainLooper()).postDelayed(this, interval)
                     }
                 }
             }.run()
